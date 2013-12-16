@@ -30,23 +30,35 @@
                 </h1>
 
                 <nav>
-                    <span class="{% if page.site_section == 'blog' %} active {% endif %}">
-                        <a href="/blog">Blog</a>
-                    </span>
-                    |
-                    <span class="{% if page.site_section == 'resume' %} active {% endif %}">
-                        <a href="/resume">Résumé</a>
-                    </span>
-                    |
-                    <span class="{% if page.site_section == 'about' %} active {% endif %}">
-                        <a href="/about">About</a>
-                    </span>
+                    <li class="{% if page.site_section == 'blog' %} active {% endif %}">
+                        <a href="/blog">
+                            <span class="link-wrap">[</span>
+                            Blog
+                            <span class="link-wrap">]</span>
+                        </a>
+                    </li>
+
+                    <li class="{% if page.site_section == 'resume' %} active {% endif %}">
+                        <a href="/resume">
+                            <span class="link-wrap">[</span>
+                            Résumé
+                            <span class="link-wrap">]</span>
+                        </a>
+                    </li>
+
+                    <li class="{% if page.site_section == 'about' %} active {% endif %}">
+                        <a href="/about">
+                            <span class="link-wrap">[</span>
+                            About
+                            <span class="link-wrap">]</span>
+                        </a>
+                    </li>
                 </nav>
 
             </div>
         </header>
 
-        <hr />
+        <br />
 
         <section class="content container">
             {{ content }}
