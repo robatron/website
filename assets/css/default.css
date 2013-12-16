@@ -1,13 +1,14 @@
 body {
     /*background-image: url('/assets/img/squairy-light.png');*/
+    max-width: 970px;
 }
 
+/* Header */
 header .title a,
 header .title a:hover  {
     color: #333;
     text-decoration: none;
 }
-
 header nav span.active a {
     color: red;
 }
