@@ -1,5 +1,5 @@
 ---
-max_width: 768px
+screen_sm_min: 768px
 ---
 /** Default styles
 
@@ -32,14 +32,18 @@ max_width: 768px
         @media (min-width: @screen-lg-min) { ... }
 */
 
-/* Global */
+/** Global
+    ======
+    The container should not expand beyond {{ page.screen_sm_min }}
+*/
 body {
     /*background-image: url('/assets/img/squairy-light.png');*/
 }
 
 .container {
-    max-width: {{ page.max_width }};
+    max-width: {{ page.screen_sm_min }};
 }
+
 
 /** Header
     ====== */
@@ -50,25 +54,51 @@ header {
     border-bottom: 1px solid black;
 }
 
-header .header-content {
-    position: relative;
-}
-
-header .title {
-    display: inline;
-}
 header .title a,
 header .title a:hover  {
     color: #333;
     text-decoration: none;
 }
 
-header nav {
+header .title .text {
     display: inline;
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
+header .title .long-text {
+    display: none;
+}
+
 header nav span.active a {
     color: red;
+}
+
+/** Small screen +
+    --------------
+    Above a small screen, {{ page.screen_sm_min }}, the nav links should:
+
+        - Align-bottom with the title
+        - Align-right to the grid container
+*/
+
+@media ( min-width: {{ page.screen_sm_min }} ){
+    header .header-content {
+        position: relative;
+    }
+
+    header .title {
+        display: inline;
+    }
+
+    header .title .text {
+        display: none;
+    }
+    header .title .long-text {
+        display: inline;
+    }
+
+    header nav {
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
