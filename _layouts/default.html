@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/default.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
+    </head>
+
+    <body class="container">
+        <header>
+
+            <h1 class="title">
+                {{ site.name }}
+            </h1>
+
+            <nav>
+                <span class="{% if page.id == 'blog' %}   active {% endif %}">
+                    <a href="/">blog</a>
+                </span>
+                |
+                <span class="{% if page.id == 'resume' %} active {% endif %}">
+                    <a href="/resume">resume</a>
+                </span>
+                |
+                <span class="{% if page.id == 'about' %}  active {% endif %}">
+                    <a href="/about">about</a>
+                </span>
+            </nav>
+
+        </header>
+
+        <hr />
+
+        <section class="content">
+            {{ content }}
+        </section>
+
+        <hr />
+
+        <footer>
+            I'm a footer.
+        </footer>
+    </body>
+
+</html>

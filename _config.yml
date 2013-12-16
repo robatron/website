@@ -1,0 +1,15 @@
+# Default Jekyll build configuration, used by GitHub.
+
+markdown:   redcarpet
+pygments:   true
+
+baseurl:    ''
+
+name:       Rob McGuire-Dale
+short_name: Rob M.D.
+
+resume:
+    names:
+        - Alice
+        - Bob
+        - Charlie

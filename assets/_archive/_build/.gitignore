@@ -1,0 +1,4 @@
+# Front-end build and asset dependencies
+bower_components
+node_modules
+npm-debug.log

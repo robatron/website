@@ -1,0 +1,7 @@
+body {
+    background-image: url('/assets/img/brilliant.png');
+}
+
+header nav span.active a {
+    color: red;
+}

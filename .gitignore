@@ -1,0 +1,18 @@
+# Generated Jekyll site
+_site
+
+
+# Mac stuff
+.DS_Store
+
+
+# Old stuff
+_old
+
+
+# Sublime
+*.sublime-workspace
+
+
+# Cloud9 IDE junk
+.c9revisions
