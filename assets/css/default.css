@@ -1,13 +1,73 @@
+---
+max_width: 768px
+---
+/** Default styles
+
+    This file is templated like any other file. Use Jekyll variables in front-
+    matter section above.
+
+
+    Bootstrap Media Query Reference
+    -------------------------------
+    Media queries used by Bootstrap.
+    http://getbootstrap.com/css/#grid
+
+    - Extra small devices (phones, less than 768px)
+
+        (No media query since this is the default in Bootstrap)
+
+
+    - Small devices (tablets, 768px and up)
+
+        @media (min-width: @screen-sm-min) { ... }
+
+
+    - Medium devices (desktops, 992px and up)
+
+        @media (min-width: @screen-md-min) { ... }
+
+
+    - Large devices (large desktops, 1200px and up)
+
+        @media (min-width: @screen-lg-min) { ... }
+*/
+
+/* Global */
 body {
     /*background-image: url('/assets/img/squairy-light.png');*/
-    max-width: 970px;
 }
 
-/* Header */
+.container {
+    max-width: {{ page.max_width }};
+}
+
+/** Header
+    ====== */
+
+/** Default
+    ------- */
+header {
+    border-bottom: 1px solid black;
+}
+
+header .header-content {
+    position: relative;
+}
+
+header .title {
+    display: inline;
+}
 header .title a,
 header .title a:hover  {
     color: #333;
     text-decoration: none;
+}
+
+header nav {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 header nav span.active a {
     color: red;

@@ -14,38 +14,40 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
     </head>
 
-    <body class="container">
+    <body>
         <header>
+            <div class="header-content container">
 
-            <h1 class="title">
-                <a href="/">{{ site.name }}</a>
-            </h1>
+                <h1 class="title">
+                    <a href="/">{{ site.name }}</a>
+                </h1>
 
-            <nav>
-                <span class="{% if page.site_section == 'blog' %} active {% endif %}">
-                    <a href="/blog">Blog</a>
-                </span>
-                |
-                <span class="{% if page.site_section == 'resume' %} active {% endif %}">
-                    <a href="/resume">Résumé</a>
-                </span>
-                |
-                <span class="{% if page.site_section == 'about' %} active {% endif %}">
-                    <a href="/about">About</a>
-                </span>
-            </nav>
+                <nav>
+                    <span class="{% if page.site_section == 'blog' %} active {% endif %}">
+                        <a href="/blog">Blog</a>
+                    </span>
+                    |
+                    <span class="{% if page.site_section == 'resume' %} active {% endif %}">
+                        <a href="/resume">Résumé</a>
+                    </span>
+                    |
+                    <span class="{% if page.site_section == 'about' %} active {% endif %}">
+                        <a href="/about">About</a>
+                    </span>
+                </nav>
 
+            </div>
         </header>
 
         <hr />
 
-        <section class="content">
+        <section class="content container">
             {{ content }}
         </section>
 
         <hr />
 
-        <footer>
+        <footer class="container">
             I'm a footer.
         </footer>
     </body>

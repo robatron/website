@@ -5,10 +5,10 @@ pygments:   true
 
 baseurl:    ''
 
-# name:       Rob McGuire-Dale
-name:       Spc NdHvjsf-Ebmf
-# short_name: Rob M.D.
-short_name: Spc N.E.
+name:       Rob McGuire-Dale
+short_name: Rob M.D.
+# name:       Spc NdHvjsf-Ebmf
+# short_name: Spc N.E.
 
 resume:
     names:
