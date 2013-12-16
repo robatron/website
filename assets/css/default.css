@@ -1,5 +1,11 @@
 body {
-    background-image: url('/assets/img/squairy-light.png');
+    /*background-image: url('/assets/img/squairy-light.png');*/
+}
+
+header .title a,
+header .title a:hover  {
+    color: #333;
+    text-decoration: none;
 }
 
 header nav span.active a {

@@ -1,0 +1,41 @@
+---
+layout:         default
+site_section:   blog
+name:           Blog
+---
+
+<section class="blog-posts">
+
+    <ul class="media-list">
+        {% for post in site.posts %}
+
+            <li class="media">
+
+                <a class="pull-left" href="{{ site.baseurl }}{{ post.url }}">
+                    <img class="media-object" src="//placehold.it/64x64"/>
+                </a>
+
+                <div class="media-body">
+
+                    <h4 class="media-heading">
+
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+
+                            <span class="muted">
+                                {{ post.date | date_to_string }}
+                            </span>
+
+                            &raquo;
+
+                            {{ post.title }}
+                        </a>
+                    </h4>
+
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+
+            </li>
+        {% endfor %}
+    </ul>
+
+</section>

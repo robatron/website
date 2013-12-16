@@ -7,7 +7,7 @@
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>{{ page.title }}</title>
+        <title>{{ page.name }} | {{ site.name }}</title>
 
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/default.css">
@@ -18,20 +18,20 @@
         <header>
 
             <h1 class="title">
-                {{ site.name }}
+                <a href="/">{{ site.name }}</a>
             </h1>
 
             <nav>
-                <span class="{% if page.id == 'blog' %}   active {% endif %}">
-                    <a href="/">blog</a>
+                <span class="{% if page.site_section == 'blog' %} active {% endif %}">
+                    <a href="/blog">Blog</a>
                 </span>
                 |
-                <span class="{% if page.id == 'resume' %} active {% endif %}">
-                    <a href="/resume">resume</a>
+                <span class="{% if page.site_section == 'resume' %} active {% endif %}">
+                    <a href="/resume">Résumé</a>
                 </span>
                 |
-                <span class="{% if page.id == 'about' %}  active {% endif %}">
-                    <a href="/about">about</a>
+                <span class="{% if page.site_section == 'about' %} active {% endif %}">
+                    <a href="/about">About</a>
                 </span>
             </nav>
 
