@@ -1,14 +1,13 @@
-# Default Jekyll build configuration, used by GitHub.
+# Jekyll configuration and data
 
+
+# Jekyll config
+# -------------
 markdown:   redcarpet
 pygments:   true
-
 baseurl:    ''
 
-name:  Rob McGuire-Dale
 
-resume:
-    names:
-        - Alice
-        - Bob
-        - Charlie
+# Global
+# ------
+name:  Rob McGuire-Dale

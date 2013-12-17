@@ -1,0 +1,6 @@
+---
+# Fromat the 'data' property in 'resume.md' as JSON
+layout:         json
+page_filename:  resume.md
+prop_name:      data
+---

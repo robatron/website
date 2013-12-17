@@ -1,0 +1,25 @@
+{% comment %}
+
+    This layout formats the specified page property in the specified page as
+    JSON.
+
+
+    To use this layout in a template, specify the following properties in the
+    frontmatter, and include no body:
+
+        - layout            - Specify as 'json' to use this layout
+        - page_filename     - The file name containing the property to format
+        - prop_name         - The name of the property to format
+
+
+    For example, let's say you have a template named 'resume.json', the
+    contents should look like the following:
+
+        ---
+        layout:         json
+        page_filename:  resume.md
+        prop_name:      data
+        ---
+
+
+{% endcomment %}{% for p in site.pages %}{% if p.path contains page.page_filename %}{{ p.[page.prop_name] | jsonify }}{% endif %}{% endfor %}
