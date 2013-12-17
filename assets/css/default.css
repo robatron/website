@@ -6,27 +6,32 @@ grid:
     max_size: 768px
 
 
-screens:
-    xxs_min: 360px
-    xs_min:  480px
-    sm_min:  640px
-
-
 colors:
     text:        '#333'
     text_hover:  '#A60000'
     text_active: '#F00'
+
+
+header:
+    breakpoints:
+        small_min:  360px
+        medium_min: 480px
+        large_min:  640px
 ---
-/** Default styles
+/** Default styles.
 
-    This file is templated like any other file. Use Jekyll variables in front-
-    matter section above.
+    This file is templated like any other file in this Jekyll file structure.
+    Use Jekyll variables in front-matter section above to define style values
+    for use below.
+
+    If you're viewing the compiled file, e.g., through a web browser,
+    obviously you won't see this.
 
 
-    Bootstrap Media Query Reference
-    -------------------------------
-    Media queries used by Bootstrap.
-    http://getbootstrap.com/css/#grid
+    Bootstrap Screen Breakpoints Reference
+    --------------------------------------
+    Screen-size-based breakpoints and associated media queries used by
+    Bootstrap for reference. <http://getbootstrap.com/css/#grid>
 
     - Extra small devices (phones, less than 768px)
 
@@ -48,8 +53,13 @@ colors:
         @media (min-width: @screen-lg-min) { ... }
 */
 
-/** Default screen size
-    ------------------- */
+
+/** Global
+============================================================================ */
+
+
+/** Default
+    ------- */
 
 body {
     /*background-image: url('/assets/img/squairy-light.png');*/
@@ -60,9 +70,17 @@ body {
     max-width: {{ page.grid.max_size }};
 }
 
+
+/** Header
+============================================================================ */
+
+
+/** Default
+    ------- */
+
 header {
-    border-bottom: 1px solid black;
-    padding-top: 0;
+    border-bottom:  1px solid black;
+    padding-top:    0;
     padding-bottom: {{ page.grid.padding }};
 }
 
@@ -93,10 +111,10 @@ header nav li.active a {
     color: {{ page.colors.text_active }};
 }
 
-/** Above XXS screen
-    ----------------
-*/
-@media ( min-width: {{ page.screens.xxs_min }} ) {
+
+/** Small
+    ----- */
+@media ( min-width: {{ page.header.breakpoints.small_min }} ) {
     header .title .text {
         display: none;
     }
@@ -106,24 +124,23 @@ header nav li.active a {
 }
 
 
-/** Above XS screen
-    ---------------
-*/
-@media ( min-width: {{ page.screens.xs_min }} ) {
+/** Medium
+    ------- */
+@media ( min-width: {{ page.header.breakpoints.medium_min }} ) {
+    /* Nothin' special for now */
 }
 
 
-/** Above small screen
-    ------------------
+/** Large
+    -----
 
     - Align-bottom with the title
     - Align-right to the grid container
 */
+@media ( min-width: {{ page.header.breakpoints.large_min }} ) {
 
-@media ( min-width: {{ page.screens.sm_min }} ) {
     header {
         padding-top: {{ page.grid.padding | times: 2 }}px;
-        padding-bottom: 0;
     }
 
     header .header-content {
@@ -135,9 +152,9 @@ header nav li.active a {
     }
 
     header nav {
-        display: inline;
-        position: absolute;
-        bottom: 0;
-        right: {{ page.grid.padding }};
+        display:    inline;
+        position:   absolute;
+        bottom:     0;
+        right:      {{ page.grid.padding }};
     }
 }
