@@ -7,9 +7,9 @@
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>{{ page.name }} | {{ site.long_name }}</title>
+        <title>{{ page.name }} | {{ site.name }}</title>
 
-        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Orbitron'>
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Orbitron'>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/default.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
@@ -29,25 +29,19 @@
 
                     <li class="{% if page.site_section == 'blog' %} active {% endif %}">
                         <a href="/blog">
-                            <span class="link-wrap">[</span>
                             Blog
-                            <span class="link-wrap">]</span>
                         </a>
                     </li>
 
                     <li class="{% if page.site_section == 'resume' %} active {% endif %}">
                         <a href="/resume">
-                            <span class="link-wrap">[</span>
                             Résumé
-                            <span class="link-wrap">]</span>
                         </a>
                     </li>
 
                     <li class="{% if page.site_section == 'about' %} active {% endif %}">
                         <a href="/about">
-                            <span class="link-wrap">[</span>
                             About
-                            <span class="link-wrap">]</span>
                         </a>
                     </li>
                 </nav>
@@ -55,31 +49,28 @@
             </div>
         </header>
 
-        <br />
-
         <section class="content container">
             {{ content }}
         </section>
 
-        <hr />
-
-        <footer class="text-muted container">
-            <div class="publish-info">
-                <p>
-                    &copy 2013 Rob McGuire-Dale
-                </p>
-                <p>
-                    Last updated {{ site.time | date_to_string }}
-                </p>
-            </div>
-
-            <div class="code-info">
-                <p>
-                    Built with Jekyll, hosted on GitHub Pages
-                </p>
-                <p>
-                    Source available on GitHub
-                </p>
+        <footer>
+            <div class="container">
+                <div class="text-muted content">
+                    <p>
+                        <!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> -->
+                        &copy; 2014
+                        <a href="//robmd.net">Rob McGuire-Dale</a>
+                    </p>
+                    <p>
+                        Last updated {{ site.time }}
+                    </p>
+                    <p>
+                        Source available on
+                        <a href="//github.com/robatron/website">
+                            GitHub
+                        </a>
+                    </p>
+                </div>
             </div>
         </footer>
     </body>
