@@ -2,7 +2,7 @@
 grid:
     padding: 15px
 
-    min_size: 275px
+    min_size: 320px
     max_size: 768px
 
 
@@ -14,9 +14,8 @@ colors:
 
 header:
     breakpoints:
-        small_min:  400px
-        medium_min: 480px
-        large_min:  720px
+        stacked_large:  420px
+        horizontal:     720px
 
 
 footer:
@@ -92,17 +91,15 @@ header {
 }
 
 header .title {
-    font-family: 'Orbitron', sans-serif;
+    font-family:    'Orbitron', sans-serif;
+    font-size:      27px;
+    font-weight:    bold;
 }
 
 header .title a,
 header .title a:hover  {
     color: {{ page.colors.text }};
     text-decoration: none;
-}
-
-header .title .long-text {
-    display: none;
 }
 
 header nav li {
@@ -123,32 +120,22 @@ header nav li.active a {
 }
 
 
-/** Small
-    ----- */
-@media ( min-width: {{ page.header.breakpoints.small_min }} ) {
-    header .title .text {
-        display: none;
-    }
-    header .title .long-text {
-        display: inline;
+/** Stacked large
+    ------------- */
+@media ( min-width: {{ page.header.breakpoints.stacked_large }} ) {
+    header .title {
+        font-size: 36px;
     }
 }
 
 
-/** Medium
-    ------- */
-@media ( min-width: {{ page.header.breakpoints.medium_min }} ) {
-    /* Nothin' special for now */
-}
-
-
-/** Large
-    -----
+/** Horizontal
+    ----------
 
     - Align-bottom with the title
     - Align-right to the grid container
 */
-@media ( min-width: {{ page.header.breakpoints.large_min }} ) {
+@media ( min-width: {{ page.header.breakpoints.horizontal }} ) {
 
     header {
         padding-top: {{ page.grid.padding | times: 2 }}px;
