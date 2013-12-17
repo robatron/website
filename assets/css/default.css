@@ -14,9 +14,14 @@ colors:
 
 header:
     breakpoints:
-        small_min:  360px
+        small_min:  400px
         medium_min: 480px
-        large_min:  640px
+        large_min:  720px
+
+
+footer:
+    breakpoints:
+        large_min: 640px
 ---
 /** Default styles.
 
@@ -79,9 +84,15 @@ body {
     ------- */
 
 header {
+    font-family: 'Orbitron', sans-serif;
     border-bottom:  1px solid black;
     padding-top:    0;
     padding-bottom: {{ page.grid.padding }};
+    text-align: center;
+}
+
+header .title {
+    font-family: 'Orbitron', sans-serif;
 }
 
 header .title a,
@@ -141,6 +152,8 @@ header nav li.active a {
 
     header {
         padding-top: {{ page.grid.padding | times: 2 }}px;
+        padding-bottom: 0px;
+        text-align: left;
     }
 
     header .header-content {
@@ -154,7 +167,29 @@ header nav li.active a {
     header nav {
         display:    inline;
         position:   absolute;
-        bottom:     0;
+        bottom:     2px;
         right:      {{ page.grid.padding }};
+    }
+}
+
+/** Footer
+============================================================================ */
+
+footer {
+    text-align: center;
+}
+
+/** Large
+    ----- */
+@media ( min-width: {{ page.footer.breakpoints.large_min }} ) {
+
+    footer .publish-info {
+        text-align: left;
+        float: left;
+    }
+
+    footer .code-info {
+        text-align: right;
+        float: right;
     }
 }
