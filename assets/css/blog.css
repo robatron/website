@@ -1,0 +1,15 @@
+---
+tags:
+    padding: 5px
+---
+.blog-posts .post-date {
+    margin-bottom: 15px;
+}
+
+.blog-posts .post-title {
+    margin-top: 5px;
+}
+
+.blog-posts .post-tag:not( :last-child ) {
+    margin-right: {{ page.tags.padding }};
+}

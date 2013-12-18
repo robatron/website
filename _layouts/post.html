@@ -1,13 +1,17 @@
 ---
-layout: default
+layout:         default
+site_section:   blog
+name:           Blog
 ---
-<h2>
+
+<h2 class="post-title">
     {{ page.title }}
 </h2>
+
 <p class="meta">
     {{ page.date | date_to_string }}
 </p>
 
-<div class="post">
+<div class="post-body">
     {{ content }}
 </div>

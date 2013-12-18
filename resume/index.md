@@ -1,6 +1,10 @@
 ---
-layout:     default
+layout:         default
+site_section:   resume
+title:          Résumé
 
+# Resume data structure
+# ---------------------
 data:
     title: "Resume"
     foos:

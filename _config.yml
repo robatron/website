@@ -6,6 +6,7 @@
 markdown:   redcarpet
 pygments:   true
 baseurl:    ''
+permalink:  /blog/:title.html
 
 
 # Global
