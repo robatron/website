@@ -1,18 +1,29 @@
 ---
+blog_list:
+    root_selector: section.blog-list li.blog-post
 ---
 
-.blog-posts .blog-post {
+/** Blog List
+============================================================================ */
+
+{{ page.blog_list.root_selector }} {
     margin-bottom: 40px;
 }
 
-.blog-posts .post-date {
+{{ page.blog_list.root_selector }} .post-date {
     margin-bottom: 5px;
 }
 
-.blog-posts .post-title {
+{{ page.blog_list.root_selector }} .post-title {
     margin-top: 0px;
 }
 
-.blog-posts .post-tag:not( :last-child ) {
+{{ page.blog_list.root_selector }} .post-tag:not( :last-child ) {
     margin-right: 5px;
 }
+
+
+/** Blog Post
+============================================================================ */
+
+
