@@ -51,7 +51,7 @@ use Git to track changes in your database backups as well?
 The backup process is simple: Dump your database over the previous backup, and
 commit. Here's an example backup script using MySQL:
 
-<pre class='prettyprint'>
+{% highlight sh %}
 #! /bin/sh
 
 # Settings
@@ -74,7 +74,7 @@ git init
 # Add the database to the repo and commit
 git add $DB_DUMP
 git commit -m "Update database dump"
-</pre>
+{% endhighlight %}
 
 A couple things to note about this script:
 
@@ -105,7 +105,6 @@ As [suggested](http://viget.com/extend/backup-your-database-in-git#comment-40053
 by Bram Schoenmakers, here are some Git configurations that should decrease
 disk usage of the repository:
 
->
 - **core.compression = 9** - Flag for gzip to specify the compression level for
   blobs and packs. Level 1 is fast with larger file sizes, level 9 takes more
   time but results in better compression.

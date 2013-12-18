@@ -33,60 +33,60 @@ development on Ubuntu 9.10 (and possibly later versions).
 4. Log in to your virtual terminal
 5. Kill X and GDM
 
-    <pre class='prettyprint'>
-        sudo service gdm stop
-    </pre>
+{% highlight sh %}
+sudo service gdm stop
+{% endhighlight %}
 
 6. `cd` to where you downloaded the driver
 7. Run the driver installer script
 
-    <pre class='prettyprint'>
-        sudo ./nvidia-driver-install-script-name.run
-    </pre>
+{% highlight sh %}
+sudo ./nvidia-driver-install-script-name.run
+{% endhighlight %}
 
 8. Follow the on-screen instructions to install the driver. Allow it to
    automatically configure your `xorg.config` for you.
 9. After the installer has finished, reboot
 
-    <pre class='prettyprint'>
-        sudo reboot
-    </pre>
+{% highlight sh %}
+sudo reboot
+{% endhighlight %}
 
 # Install the CUDA toolkit
 
 1. Open a terminal and `cd` to where you donloaded the toolkit
 2. Run the toolkit installer
 
-    <pre class='prettyprint'>
-        sudo ./nvidia-toolkit-install-script-name.run
-    </pre>
+{% highlight sh %}
+sudo ./nvidia-toolkit-install-script-name.run
+{% endhighlight %}
 
 # Add CUDA to your environment variables
 
 1. Open a terminal and type
 
-    <pre class='prettyprint'>
-        echo "# CUDA stuff
-        PATH=\$PATH:/usr/local/cuda/bin
-        LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:/usr/local/cuda/lib
-        export PATH
-        export LD_LIBRARY_PATH" >> ~/.bashrc
-    </pre>
+{% highlight sh %}
+echo "# CUDA stuff
+PATH=\$PATH:/usr/local/cuda/bin
+LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:/usr/local/cuda/lib
+export PATH
+export LD_LIBRARY_PATH" >> ~/.bashrc
+{% endhighlight %}
 
 2. Reload your `.bashrc` by either restarting your terminal, or with
 
-    <pre class='prettyprint'>
-        . ~/.bashrc
-    </pre>
+{% highlight sh %}
+. ~/.bashrc
+{% endhighlight %}
 
 # Install the CUDA SDK
 
 1. Open a terminal and `cd` to where you downloaded the SDK
 2. Run the toolkit installer
 
-    <pre class='prettyprint'>
-        sudo ./nvidia-SDK-install-script-name.run
-    </pre>
+{% highlight sh %}
+sudo ./nvidia-SDK-install-script-name.run
+{% endhighlight %}
 
 # Install and configure GCC v4.3
 
@@ -96,23 +96,23 @@ v4.4 and change it back whenever you want.)
 
 1. Open a terminal and install gcc v4.3 from APT
 
-    <pre class='prettyprint'>
-        sudo apt-get install gcc-4.3
-    </pre>
+{% highlight sh %}
+sudo apt-get install gcc-4.3
+{% endhighlight %}
 
 2. `cd` to `/usr/bin`
 3. Remove the current gcc and g++ symlinks
 
-    <pre class='prettyprint'>
-        sudo rm gcc g++
-    </pre>
+{% highlight sh %}
+sudo rm gcc g++
+{% endhighlight %}
 
 4. Create new symlinks to v4.3
 
-    <pre class='prettyprint'>
-        ln -s gcc-4.3 gcc
-        ln -s g++-4.3 g++
-    </pre>
+{% highlight sh %}
+ln -s gcc-4.3 gcc
+ln -s g++-4.3 g++
+{% endhighlight %}
 
 # Disable Compiz
 
@@ -126,15 +126,15 @@ interfere.
 # Build and run CUDA examples
 1. `cd` to the *C* directory in the CUDA SDK installation directory
 
-    <pre class='prettyprint'>
-        cd ~/NVIDIA_GPU_Computing_SDK/C
-    </pre>
+{% highlight sh %}
+cd ~/NVIDIA_GPU_Computing_SDK/C
+{% endhighlight %}
 
 2. Build the examples. This will take a few minutes to compile.
 
-    <pre class='prettyprint'>
-        sudo make
-    </pre>
+{% highlight sh %}
+sudo make
+{% endhighlight %}
 
 3. Run the examples in `~/NVIDIA_GPU_Computing_SDK/C/bin/linux/release
 4. Have fun!
