@@ -26,4 +26,22 @@ blog_list:
 /** Blog Post
 ============================================================================ */
 
+article.blog-post .post-title {
+    margin-top: 0;
+}
 
+article.blog-post .post-header {
+    margin-bottom: 30px;
+}
+
+article.blog-post .post-body h1 {
+    font-size: 26px;
+}
+
+article.blog-post .post-body h2 {
+    font-size: 20px;
+}
+
+article.blog-post .post-body h3 {
+    font-size: 16px;
+}

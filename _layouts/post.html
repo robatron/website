@@ -1,6 +1,5 @@
 ---
-layout:         default
-site_section:   blog
+layout:         blog
 name:           Blog
 ---
 <article class="blog-post">
@@ -9,20 +8,22 @@ name:           Blog
         &laquo; Back to Blog List
     </a> -->
 
-    <h1 class="post-title">
-        <a href="{{ site.baseurl }}{{ page.url }}">
-            {{ page.title }}
-        </a>
-    </h1>
+    <div class="post-header">
+        <h1 class="post-title">
+            <a href="{{ site.baseurl }}{{ page.url }}">
+                {{ page.title }}
+            </a>
+        </h1>
 
-    <div class="post-date text-muted">
-        {{ page.date | date: "%Y %b %d"}}
-    </div>
+        <p class="post-date text-muted">
+            {{ page.date | date: "%Y %b %d"}}
+        </p>
 
-    <div class="post-tags">
-        {% for tag in page.tags %}
-            <span class="post-tag label label-default">{{ tag }}</span>
-        {% endfor %}
+        <p class="post-tags">
+            {% for tag in page.tags %}
+                <span class="post-tag label label-default">#{{ tag }}</span>
+            {% endfor %}
+        </p>
     </div>
 
     <div class="post-body">
