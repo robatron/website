@@ -3,15 +3,30 @@ layout:         default
 site_section:   blog
 name:           Blog
 ---
+<article class="blog-post">
 
-<h2 class="post-title">
-    {{ page.title }}
-</h2>
+    <a class="back-to-blog-list" href="{{ site.baseurl }}/blog">
+        &laquo; Back to Blog List
+    </a>
 
-<p class="meta">
-    {{ page.date | date_to_string }}
-</p>
+    <h2 class="post-title">
+        <a href="{{ site.baseurl }}{{ page.url }}">
+            {{ page.title }}
+        </a>
+    </h2>
 
-<div class="post-body">
-    {{ content }}
-</div>
+    <div class="post-date text-muted">
+        {{ page.date | date: "%Y %b %d"}}
+    </div>
+
+    <div class="post-tags">
+        {% for tag in page.tags %}
+            <span class="post-tag label label-default">{{ tag }}</span>
+        {% endfor %}
+    </div>
+
+    <div class="post-body">
+        {{ content }}
+    </div>
+
+</article>

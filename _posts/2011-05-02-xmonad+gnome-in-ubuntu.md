@@ -3,7 +3,7 @@ layout: post
 title:  Xmonad + GNOME in Ubuntu
 tags:   how-to linux
 
-summary:
+summary: >
     Dislike the Unity shell in Ubuntu? Like tiling window managers? Here's how
     to replace GNOME's default window manager with the Xmonad dynamically-
     tiling window manager to create a slick GNOME/Xmonad hybrid in Ubuntu 11.04

@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  JavaScript Tag Filtering
-tags:   meta
+tags:   meta old-site
 
-summary:
+summary: >
     A new addition to my little blog system: simple, JavaScript-based tag
     filtering. It works like this: When the blog-list page is rendered, each
     blog article snippet is wrapped in a div with class names equal to the

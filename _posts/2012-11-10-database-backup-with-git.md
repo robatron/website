@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Database Backkup with Git
+title:  Database Backup with Git
 tags:   sysadmin database git
 
-summary:
+summary: >
     I came up with a simple, intuitive database backup solution using Git to
     track revisions.
 ---

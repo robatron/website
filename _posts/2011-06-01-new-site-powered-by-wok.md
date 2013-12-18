@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  New website, powered by wok
-tags:   meta
+tags:   meta old-site
 
-summary:
+summary: >
     Here it is, my new website. It was created using wok, an awesome static
     website generator written by my friend and ex-coworker, Mike Cooper.
 

@@ -3,7 +3,7 @@ layout: post
 title:  nVidia CUDA multi-core development in Ubuntu
 tags:   how-to linux programming
 
-summary:
+summary: >
     Here's a step-by-step guide on how to install nVidia's CUDA SDK
     for multi-core development on Ubuntu 9.10 (and possibly later
     versions).
