@@ -19,5 +19,3 @@ Also available as [JSON]({{ site.url }}/resume/resume.json).
 {% for foo in page.resume_data.foos %}
 - {{ foo }}
 {% endfor %}
-
-This page ID is: {{ page.path }}

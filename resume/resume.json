@@ -1,6 +1,6 @@
 ---
-# Fromat the 'data' property in 'resume.md' as JSON
+# Format the 'data' property in 'resume.md' as JSON
 layout:         json
-page_filename:  resume.md
+page_filename:  resume/index.md
 prop_name:      data
 ---
