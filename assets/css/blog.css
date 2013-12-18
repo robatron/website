@@ -12,10 +12,17 @@ blog_list:
 
 {{ page.blog_list.root_selector }} .post-date {
     margin-bottom: 5px;
+    font-size: 16px;
+}
+
+{{ page.blog_list.root_selector }} .post-tags {
+    line-height: 2;
 }
 
 {{ page.blog_list.root_selector }} .post-title {
     margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 36px;
 }
 
 {{ page.blog_list.root_selector }} .post-tag:not( :last-child ) {
