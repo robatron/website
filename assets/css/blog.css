@@ -35,6 +35,11 @@ blog_list:
 
 article.blog-post .post-title {
     margin-top: 0;
+    margin-bottom: 15px;
+}
+
+article.blog-post .post-date {
+    margin-bottom: 15px;
 }
 
 article.blog-post .post-header {

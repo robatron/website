@@ -100,7 +100,7 @@ header {
     padding-top:        0;
     text-align:         center;
     padding-bottom:     {{ page.grid.padding }};
-    margin-bottom:      {{ page.grid.padding | times: 2}}px;
+    margin-bottom:      20px;
     box-shadow:         0px 2px 10px #CCC;
     background-color:   rgba( 0, 0, 0, 0.1);
 }
