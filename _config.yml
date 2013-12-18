@@ -3,6 +3,7 @@
 
 # Jekyll config
 # -------------
+encoding:   UTF-8
 markdown:   redcarpet
 pygments:   true
 baseurl:    ''
