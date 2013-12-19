@@ -9,7 +9,7 @@ summary: >
     tiling window manager to create a slick GNOME/Xmonad hybrid in Ubuntu 11.04
     (and possibly later versions).
 
-title_img_src:
+cover_img_filename:
     https://lh5.googleusercontent.com/-XYXWyrfQNPk/Tb4Htcs9mLI/AAAAAAAACZ8/AcXqaLkziPE/s144/Screenshot.png
 ---
 

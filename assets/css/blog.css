@@ -46,8 +46,14 @@ article.blog-post .post-header {
     margin-bottom: 30px;
 }
 
+article.blog-post .post-img {
+    margin-bottom: 15px;
+}
+
 article.blog-post .post-body h1 {
-    font-size: 26px;
+    font-size:  26px;
+    margin-top: 30px;
+    border-bottom: 1px solid #AAA;
 }
 
 article.blog-post .post-body h2 {

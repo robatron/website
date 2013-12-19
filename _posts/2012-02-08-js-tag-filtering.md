@@ -9,8 +9,7 @@ summary: >
     blog article snippet is wrapped in a div with class names equal to the
     article's tags.
 
-title_img_src:
-    https://lh6.googleusercontent.com/-rjKzn_FKkyk/TzTn6Sd8AfI/AAAAAAAADXc/8VTAuLzjvJg/s144/Capture.jpg
+cover_img_filename: ssh-tunnel-whiteboard-diagram.jpg
 ---
 
 A new addition to my little blog system: simple JavaScript-based tag filtering.

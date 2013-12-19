@@ -9,14 +9,17 @@ summary: >
     container). The resulting traffic would look just like the container
     traffic to an outside observer.
 
-title_img_src:
-    https://lh5.googleusercontent.com/-TlA-iiZqN3c/TxiFNHFgYlI/AAAAAAAADU0/gvW_wv3gexo/s144/2012-01-19_10-20-54_403.jpg
+cover_img:
+    full:       ssh-tunnel-whiteboard-diagram.jpg
+    thumbnail:  ssh-tunnel-whiteboard-diagram-thumbnail.jpg
 ---
 
 _**Disclaimer:** This article is intended for informational/educational
 purposes only. I do not advocate or condone illegal/unethical behavior, and
 assume no responsibility or liability for any consequences resulting from the
 use of the information below._
+
+{% include blog-post-img.html filename=page.cover_img.full %}
 
 [Tunneling][wp-tunneling] is the process of encapsulating one kind of network
 traffic (the [payload][]) inside of another kind of network traffic (the
@@ -48,7 +51,7 @@ ensure your traffic stays secure.
 
 ## Circumvent firewalls and web filters
 
-picasaweb-img: https://lh3.googleusercontent.com/-t9Fpjvng-Tc/TxiIf0h3wUI/AAAAAAAADU8/LQv7jf5vW1I/s144/sshtunnel.PNG
+{% include blog-post-img.html filename="sshtunnel.png" %}
 
 Firewalls and web filters block access to websites and other Internet services,
 usually for the purpose of squelching content and services deemed inappropriate
@@ -60,7 +63,7 @@ political events.
 
 [wp]: http://en.wikipedia.org
 
-picasaweb-img: https://lh6.googleusercontent.com/-U-bNfxwZhvI/Txda99AHtjI/AAAAAAAADUc/UodWC1eGEFQ/s144/Website_blocked_for_gay_content-450x303.jpg
+{% include blog-post-img.html filename="website-blocked-for-gay-interest.jpg" %}
 
 # Creating an SSH tunnel with PuTTY
 
@@ -83,7 +86,7 @@ Download and install PuTTY from its [download page][putty-download].
 Run PuTTY and make sure you can connect to your SSH server from the network
 you're trying to tunnel through.
 
-picasaweb-img: https://lh3.googleusercontent.com/-weHjuYO2yh4/TxiJxu009YI/AAAAAAAADVI/aEmxUG-B9s8/s144/putty-main.PNG
+{% include blog-post-img.html filename="putty-main.png" %}
 
 ## Set up PuTTY as a local proxy
 
@@ -98,7 +101,7 @@ traffic to your SSH server.
 choose *Dynamic* for the *Destination*
 1. Click *add*
 
-picasaweb-img: https://lh6.googleusercontent.com/-kxzRYftlDbE/TxiJ0cxM3CI/AAAAAAAADVQ/eK1KTeQKHvg/s144/putty-tunnel.PNG
+{% include blog-post-img.html filename="putty-tunnel.png" %}
 
 **Note:** It's probably a good idea to save this configuration as a session
 so you don't have to configure it each time.
@@ -115,7 +118,7 @@ the *Address* and the port number you chose in the last step, e.g., `8888` in
 the *Port* field
 1. Click *OK* and *OK* again
 
-picasaweb-img: https://lh5.googleusercontent.com/-Ctqi8nOlqaY/TxiNtWX3mnI/AAAAAAAADVc/TOupz5euS-8/s144/lan-settings.PNG
+{% include blog-post-img.html filename="lan-settings.png" %}
 
 **Note:** Alternatively, you could set up individual programs to use the proxy
 instead of your whole system.
@@ -125,5 +128,4 @@ instead of your whole system.
 That's it! Just log into your SSH server like normal, and the tunnel should
 open up. Now you're browsing with <del>portals</del> tunnels.
 
-picasaweb-img: https://lh4.googleusercontent.com/-KHYg1VmquQE/TxiTfX8OJHI/AAAAAAAADVo/_Q86fZLjlog/s144/ssh-tunnel-together.PNG
-
+{% include blog-post-img.html filename="ssh-tunnel-together.jpg" %}

@@ -12,4 +12,5 @@ permalink:  /blog/:title.html
 
 # Global
 # ------
-name:  Rob McGuire-Dale
+name:           Rob McGuire-Dale
+img_base_url:   https://googledrive.com/host/0B9Ek2mpacQQMMUVYaklQMmJsZkE/website/

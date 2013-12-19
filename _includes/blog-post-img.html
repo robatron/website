@@ -1,0 +1,17 @@
+{% comment %}
+    Markup for blog post image.
+
+        - Centered, 100% width image with a Bootstrap Thumbnail border
+        - A link to the original image
+
+    Supply a 'filename' argument, the filename to the image, sans
+    `site.base_img_url`.
+
+{% endcomment%}
+<div class="post-img">
+    <a href="{{ site.img_base_url }}{{ include.filename }}">
+        <img
+            class="img-responsive img-thumbnail center-block"
+            src='{{ site.img_base_url }}{{ include.filename }}' />
+    </a>
+</div>

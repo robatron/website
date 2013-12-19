@@ -8,7 +8,7 @@ summary: >
     for multi-core development on Ubuntu 9.10 (and possibly later
     versions).
 
-title_img_src:
+cover_img_filename:
     https://lh6.googleusercontent.com/-aO3oKZEMCpg/TM3JTfO7giI/AAAAAAAACWg/H6o3MoxiAYY/s144/Screenshot.png
 ---
 
