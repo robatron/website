@@ -15,9 +15,9 @@ name:           Blog
             </a>
         </h1>
 
-        <p class="post-date text-muted">
-            {{ page.date | date: "%Y %b %d"}}
-        </p>
+        <div class="post-date">
+            {{ page.date | date: "%Y %B %d"}}
+        </div>
 
         <p class="post-tags">
             {% for tag in page.tags %}

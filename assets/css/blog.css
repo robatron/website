@@ -20,9 +20,9 @@ blog_list:
 }
 
 {{ page.blog_list.root_selector }} .post-title {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-size: 36px;
+    margin-top:     0px;
+    margin-bottom:  5px;
+    font-size:      36px;
 }
 
 {{ page.blog_list.root_selector }} .post-tag:not( :last-child ) {
@@ -39,7 +39,13 @@ article.blog-post .post-title {
 }
 
 article.blog-post .post-date {
-    margin-bottom: 15px;
+    margin-bottom:  15px;
+    font-size:      18px;
+}
+
+article.blog-post .post-tag {
+    font-size:      12px;
+    line-height:    2.3;
 }
 
 article.blog-post .post-header {
@@ -51,9 +57,9 @@ article.blog-post .post-img {
 }
 
 article.blog-post .post-body h1 {
-    font-size:  26px;
-    margin-top: 30px;
-    border-bottom: 1px solid #AAA;
+    font-size:      26px;
+    margin-top:     30px;
+    border-bottom:  1px solid #AAA;
 }
 
 article.blog-post .post-body h2 {

@@ -129,6 +129,11 @@ header nav li {
 
 header nav a {
     color: {{ page.colors.text }};
+    text-shadow:
+        -1px -1px 30px #BBB,
+         1px -1px 30px #BBB,
+        -1px  1px 30px #BBB,
+         1px  1px 30px #BBB;
 }
 header nav a:hover {
     color:              {{ page.colors.link_primary }};
