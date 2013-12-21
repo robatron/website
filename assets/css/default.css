@@ -190,7 +190,7 @@ header nav li:not( :last-child ) {
 
 footer {
     text-align:         center;
-    margin-top:         {{ page.grid.padding | times: 4}}px;
+    margin-top:         {{ page.grid.padding }};
     border-top:         1px solid #AAA;
     padding-top:        {{ page.grid.padding | times: 2}}px;
     background-color:   rgba( 255, 255, 255, 0.4);

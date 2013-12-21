@@ -11,8 +11,8 @@ blog_list:
 }
 
 {{ page.blog_list.root_selector }} .post-date {
-    margin-bottom: 5px;
-    font-size: 16px;
+    margin-bottom:  5px;
+    font-size:      16px;
 }
 
 {{ page.blog_list.root_selector }} .post-tags {
@@ -32,6 +32,18 @@ blog_list:
 
 /** Blog Post
 ============================================================================ */
+
+.post-nav-top {
+    border-bottom:  1px solid;
+    padding-bottom: 20px;
+    margin-bottom:  30px;
+}
+
+.post-nav-bottom {
+    border-top:  1px solid;
+    padding-top: 15px;
+    margin-top:  30px;
+}
 
 article.blog-post .post-title {
     margin-top: 0;

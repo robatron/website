@@ -2,11 +2,9 @@
 layout:         blog
 name:           Blog
 ---
-<article class="blog-post">
+{% include blog-post-nav.html %}
 
-<!--     <a class="back-to-blog-list" href="{{ site.baseurl }}/blog">
-        &laquo; Back to Blog List
-    </a> -->
+<article class="blog-post container">
 
     <div class="post-header">
         <h1 class="post-title">
@@ -31,3 +29,5 @@ name:           Blog
     </div>
 
 </article>
+
+{% include blog-post-nav.html bottom="true" %}
