@@ -7,13 +7,14 @@ title:          Résumé
     <p>
         This is the HTML render of my resume.
     </p>
+
     <p>
         Also available as <a href="{{ site.url }}/resume/resume.json">JSON</a>.
     </p>
 
     <h2>Summary</h2>
     {% for summary_li in site.data.resume.summary %}
-        <li>{{ summary_li }}</li>
+        <li>{{ summary_li | markdownify }}</li>
     {% endfor %}
 
 
