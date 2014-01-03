@@ -1,0 +1,78 @@
+# Resume Data for Rob McGuire-Dale
+
+summary:
+    - My primary interests are open source, and web development.
+    - My favorite technologies are JavaScript, Python, HTML 5, Linux, and Git
+    - I've worked for Boeing, the OSU Open Source Lab, and the Portland Art Museum
+    - I have a bachelor's degree in Computer Science from Oregon State University
+
+
+skills:
+    Technical:
+        - JavaScript, jQuery, Angular.js, Backbone.js, JSON
+        - Python, Django, Bottle, CherryPy
+        - HTML 5, CSS 3, Bootstrap, LESS
+        - Linux, Git, Bash, ViM
+        - Java, PHP, Drupal
+
+    Social:
+        - "Leadership: Lead for an enterprise-wide collaborative coding project"
+        - "Coordination: Event coordinator for OSU's Linux User Group"
+        - "Adaptation: Studied abroad in San Miguel de Allende, GTO, Mexico"
+        - "Communication: Several years of Internet technical support experience"
+
+
+work_experience:
+
+    boeing:
+        name: The Boeing Company
+        role: Developer, Linux Sysadmin, Project Manager
+        date:
+            from:   June 2010
+            to:     Feb 2013
+
+        projects:
+            gitlab:
+                name: GitLab Exploration Project
+                description:
+                    Led a team of 15 people to create and manage a GitHub-like,
+                    collaborative coding service for 120+ users. Based on
+                    GitLab, Gitolite, and Nginx.
+
+
+            search_ui:
+                name: Enterprise Search Web Frontend
+                description:
+                    Primary developer of the web frontend for Boeing's
+                    internal, enterprise-wide search application handling more
+                    than 270,000 hits/day. Based on Bootstrap, Backbone.js,
+                    jQuery, and Wok.
+
+            analytics:
+                name: Web Analytics Service
+                description:
+                    Created and managed a web analytics service for several
+                    enterprise-wide web applications handling more than 1.1
+                    million hits/day. Based on Piwik, MySQL, and Nginx.
+
+            db_migrate:
+                name: Data Migration Bridge
+                description:
+                    Designed and developed a multi-threaded Java application
+                    interfacing two major manufacturing/production engineering
+                    applications. Achieved a speedup of 6.5x over legacy
+                    systems, reducing an 13-hour nightly job to only 2 hours.
+
+            mainframe_api:
+                name: Mainframe Java API
+                description:
+                    Designed and developed a Java programmable interface
+                    library to an electrical-engineering mainframe application.
+                    Based on the IBM 3270 terminal emulator.
+
+            app_sec:
+                name: Application Security Analysis
+                description:
+                    Penetration tested and analyzed web and thick-client
+                    applications for information and computer security
+                    vulnerabilities.

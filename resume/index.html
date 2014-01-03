@@ -1,0 +1,30 @@
+---
+layout:         default
+site_section:   resume
+title:          Résumé
+---
+<div class="resume container">
+    <p>
+        This is the HTML render of my resume.
+    </p>
+    <p>
+        Also available as <a href="{{ site.url }}/resume/resume.json">JSON</a>.
+    </p>
+
+    <h2>Summary</h2>
+    {% for summary_li in site.data.resume.summary %}
+        <li>{{ summary_li }}</li>
+    {% endfor %}
+
+
+    <h2>Skills</h2>
+    {% for skill_category in site.data.resume.skills %}
+        <h3>{{ skill_category }}</h3>
+        <ul>
+            {% for skill in skill_category %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+
+</div>
