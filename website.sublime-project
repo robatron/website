@@ -1,13 +1,2 @@
 {
-	"folders":
-	[
-		{
-			"follow_symlinks": true,
-			"path": "."
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/Users/rob/code/robmd.net"
-		}
-	]
 }

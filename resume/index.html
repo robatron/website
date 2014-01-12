@@ -13,19 +13,45 @@ title:          Résumé
     </p>
 
     <h2>Summary</h2>
-    {% for summary_li in site.data.resume.summary %}
-        <li>{{ summary_li | markdownify }}</li>
-    {% endfor %}
-
+    {{ site.data.resume.summary | markdownify }}
 
     <h2>Skills</h2>
-    {% for skill_category in site.data.resume.skills %}
-        <h3>{{ skill_category }}</h3>
+    {% for skillset in site.data.resume.skills %}
+        <h3>{{ skillset[0] }}</h3>
         <ul>
-            {% for skill in skill_category %}
-                <li>{{ skill }}</li>
+            {% for skill in skillset[1] %}
+                <li>{{ skill | markdownify }}</li>
             {% endfor %}
         </ul>
+    {% endfor %}
+
+    <h2>Work History</h2>
+    {% for employer in site.data.resume.work_history %}
+
+        {% assign employer_name = employer[0] %}
+        {% assign employer_info = employer[1] %}
+
+        <h3>{{ employer_name }}</h3>
+
+        <span class="text-muted">
+            {{ employer_info.role }}
+        </span>
+        <span class="text-muted pull-right">
+            {{ employer_info.date.from }} -
+            {{ employer_info.date.to }}
+        </span>
+
+        <div class="projects">
+            {% for project in employer_info.projects %}
+
+                {% assign project_name = project[0] %}
+                {% assign project_desc = project[1] %}
+
+                <h4>{{ project_name }}</h4>
+                <p>{{ project_desc }}</p>
+
+            {% endfor %}
+        </div>
     {% endfor %}
 
 </div>
