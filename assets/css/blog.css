@@ -1,31 +1,31 @@
 ---
 blog_list:
-    root_selector: section.blog-list li.blog-post
+    root: section.blog-list li.blog-post
 ---
 
 /** Blog List
 ============================================================================ */
 
-{{ page.blog_list.root_selector }} {
+{{ page.blog_list.root }} {
     margin-bottom: 40px;
 }
 
-{{ page.blog_list.root_selector }} .post-date {
+{{ page.blog_list.root }} .post-date {
     margin-bottom:  5px;
     font-size:      16px;
 }
 
-{{ page.blog_list.root_selector }} .post-tags {
+{{ page.blog_list.root }} .post-tags {
     line-height: 2;
 }
 
-{{ page.blog_list.root_selector }} .post-title {
+{{ page.blog_list.root }} .post-title {
     margin-top:     0px;
     margin-bottom:  5px;
     font-size:      36px;
 }
 
-{{ page.blog_list.root_selector }} .post-tag:not( :last-child ) {
+{{ page.blog_list.root }} .post-tag:not( :last-child ) {
     margin-right: 5px;
 }
 

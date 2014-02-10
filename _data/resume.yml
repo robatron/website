@@ -9,24 +9,24 @@ meta:
         - Open Source Enthusiest
 
 summary:
-    - "My primary interests are **software engineering**, **open source**, and **web technologies**."
-    - "My favorite technologies are **JavaScript**, **Node**, **Python**, **HTML 5**, **Linux**, and **Git**"
-    - "I've worked for [REI.com](//rei.com), [Boeing](//boeing.com), the [OSU Open Source Lab](//osuosl.org), and the [Portland Art Museum](//portlandartmuseum.org)"
-    - "I have a bachelor's degree in Computer Science from [Oregon State University](//osu.gov/)"
+    - My **primary interests** are [software engineering](http://en.wikipedia.org/wiki/Software_engineering), [open source](//en.wikipedia.org/wiki/Open_source), and [web technologies](//developer.mozilla.org/en-US/docs/Web).
+    - My **favorite technologies** are [JavaScript](//en.wikipedia.org/wiki/JavaScript), [node.js](//nodejs.org), [python](//python.org), [HTML5](//en.wikipedia.org/wiki/HTML5), [Linux](//en.wikipedia.org/wiki/Linux), and [Git](//en.wikipedia.org/wiki/Git_\(software\))
+    - I've worked as a **software developer** for [REI](//rei.com), [Boeing](//boeing.com), and [The Open Source Lab](//osuosl.org)
+    - I have a **B.S. in Computer Science** from [Oregon State University](//osu.edu)
 
 
 skills:
 
     Technical:
-        - JavaScript, jQuery, AngularJS, KnockoutJS, Backbone.js, JSON
-        - Node, Grunt, RequireJS, UglifyJS
+        - JavaScript, jQuery, AngularJS, KnockoutJS, Backbone.js
+        - Node.js, Gulp, Grunt, Browserify, RequireJS, UglifyJS
         - Python, Django, Bottle, CherryPy
-        - HTML 5, CSS 3, Bootstrap, LESS
+        - HTML5, CSS3, Bootstrap, LESS
         - Linux, Git, Bash, ViM
         - Java, PHP, Drupal
 
     Social:
-        - "**Leadership** Lead for an enterprise-wide collaborative coding project"
+        - "**Leadership:** Lead for an enterprise-wide collaborative coding project at Boeing"
         - "**Coordination:** Event coordinator for OSU's Linux User Group"
         - "**Adaptation:** Studied abroad in San Miguel de Allende, GTO, Mexico"
         - "**Communication:** Several years of Internet technical support experience"
@@ -34,11 +34,11 @@ skills:
 
 education:
 
-    "Oregon State University":
+    Oregon State University:
 
         - B.S. in Computer Science, Sept. 2011
 
-    "Mt. Hood Community College":
+    Mt. Hood Community College:
 
         - A.S. in Computer Science, Sept. 2008
         - A.S. in Mathematics, Sept. 2008
@@ -46,7 +46,7 @@ education:
 
 experience:
 
-    "REI.com":
+    Recreational Equipment Inc.:
 
         roles:
             - Software Engineer
