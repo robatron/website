@@ -10,6 +10,8 @@ summary: >
 
 cover_img_filename:
     https://lh6.googleusercontent.com/-aO3oKZEMCpg/TM3JTfO7giI/AAAAAAAACWg/H6o3MoxiAYY/s144/Screenshot.png
+
+soft_published: true
 ---
 
 Here's a step-by-step guide on how to install nVidia's CUDA SDK for multi-core

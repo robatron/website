@@ -12,6 +12,8 @@ summary: >
 cover_img:
     full:       ssh-tunnel-whiteboard-diagram.jpg
     thumbnail:  ssh-tunnel-whiteboard-diagram-thumbnail.jpg
+
+soft_published: true
 ---
 
 _**Disclaimer:** This article is intended for informational/educational

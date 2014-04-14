@@ -2,6 +2,7 @@
 layout:     post
 title:      'Jekyll on Windows: Fix "Incompatible Character Encodings" Liquid Exception'
 tags:       jekyll windows liquid ruby
+soft_published: true
 ---
 In the process of building my new Jekyll-based site, I ran into the following
 Liquid exception while trying to build for the first time on Windows:

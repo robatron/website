@@ -4,6 +4,8 @@ title:      "Welcome to Jekyll!"
 tags:       jekyll update
 summary:    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
             scelerisque ante sollicitudin commodo.
+
+soft_published: true
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

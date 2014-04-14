@@ -6,6 +6,8 @@ tags:   sysadmin database git
 summary: >
     I came up with a simple, intuitive database backup solution using Git to
     track revisions.
+
+soft_published: true
 ---
 
 I'm new to system/database adminstration. I'm currently running a web

@@ -10,6 +10,8 @@ summary: >
     article's tags.
 
 cover_img_filename: ssh-tunnel-whiteboard-diagram.jpg
+
+soft_published: true
 ---
 
 A new addition to my little blog system: simple JavaScript-based tag filtering.

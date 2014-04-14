@@ -9,6 +9,8 @@ summary: >
 
 cover_img_filename:
     https://lh3.googleusercontent.com/-vSx19ZXZoOk/Ty2CSug7pNI/AAAAAAAADW4/FD28I_Z9wME/s800/Screenshot.png
+
+soft_published: true
 ---
 Here it is, [my new website][mysite]. It was created using [wok][], an awesome
 static website generator written by my friend and ex-coworker,

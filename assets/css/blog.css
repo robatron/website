@@ -1,83 +1,88 @@
 ---
-blog_list:
-    root: section.blog-list li.blog-post
+blog_list_item:  .blog .blog-list li.blog-post
+blog_post:       .blog article.blog-post
 ---
+
+/** All
+============================================================================ */
+.blog .soft-unpublished {
+    display: none;
+}
 
 /** Blog List
 ============================================================================ */
 
-{{ page.blog_list.root }} {
+{{ page.blog_list_item }} {
     margin-bottom: 40px;
 }
 
-{{ page.blog_list.root }} .post-date {
+{{ page.blog_list_item }} .post-date {
     margin-bottom:  5px;
     font-size:      16px;
 }
 
-{{ page.blog_list.root }} .post-tags {
+{{ page.blog_list_item }} .post-tags {
     line-height: 2;
 }
 
-{{ page.blog_list.root }} .post-title {
+{{ page.blog_list_item }} .post-title {
     margin-top:     0px;
     margin-bottom:  5px;
     font-size:      36px;
 }
 
-{{ page.blog_list.root }} .post-tag:not( :last-child ) {
+{{ page.blog_list_item }} .post-tag:not( :last-child ) {
     margin-right: 5px;
 }
 
 
 /** Blog Post
 ============================================================================ */
-
-.post-nav-top {
+.blog .post-nav-top {
     border-bottom:  1px solid;
     padding-bottom: 20px;
     margin-bottom:  30px;
 }
 
-.post-nav-bottom {
+.blog.post-nav-bottom {
     border-top:  1px solid;
     padding-top: 15px;
     margin-top:  30px;
 }
 
-article.blog-post .post-title {
+{{ page.blog_post }} .post-title {
     margin-top: 0;
     margin-bottom: 15px;
 }
 
-article.blog-post .post-date {
+{{ page.blog_post }} .post-date {
     margin-bottom:  15px;
     font-size:      18px;
 }
 
-article.blog-post .post-tag {
+{{ page.blog_post }} .post-tag {
     font-size:      12px;
     line-height:    2.3;
 }
 
-article.blog-post .post-header {
+{{ page.blog_post }} .post-header {
     margin-bottom: 30px;
 }
 
-article.blog-post .post-img {
+{{ page.blog_post }} .post-img {
     margin-bottom: 15px;
 }
 
-article.blog-post .post-body h1 {
+{{ page.blog_post }} .post-body h1 {
     font-size:      26px;
     margin-top:     30px;
     border-bottom:  1px solid #AAA;
 }
 
-article.blog-post .post-body h2 {
+{{ page.blog_post }} .post-body h2 {
     font-size: 20px;
 }
 
-article.blog-post .post-body h3 {
+{{ page.blog_post }} .post-body h3 {
     font-size: 16px;
 }

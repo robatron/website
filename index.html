@@ -7,8 +7,7 @@ title:          Blog
     <ul class="media-list">
 
         {% for post in site.posts %}
-
-            <li class="blog-post media">
+            <li class="blog-post media {% unless post.soft_published %}soft-unpublished{% endunless %}">
 
                 <!-- <a class="pull-left" href="{{ site.baseurl }}{{ post.url }}">
                     <img class="media-object" src="//placehold.it/64x64"/>

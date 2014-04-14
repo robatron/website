@@ -11,6 +11,8 @@ summary: >
 
 cover_img_filename:
     https://lh5.googleusercontent.com/-XYXWyrfQNPk/Tb4Htcs9mLI/AAAAAAAACZ8/AcXqaLkziPE/s144/Screenshot.png
+
+soft_published: true
 ---
 
 Dislike the [Unity shell][unity] in Ubuntu? Like [tiling window
