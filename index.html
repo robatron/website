@@ -1,1 +1,52 @@
-blog/index.html
+---
+layout:         blog
+title:          Blog
+---
+<section class="blog-list container">
+
+    <ul class="media-list">
+
+        {% for post in site.posts %}
+
+            <li class="blog-post media">
+
+                <!-- <a class="pull-left" href="{{ site.baseurl }}{{ post.url }}">
+                    <img class="media-object" src="//placehold.it/64x64"/>
+                </a> -->
+
+                <div class="media-body">
+
+                    <div class="media-heading">
+
+                        <div class="post-date text-muted">
+                            {{ post.date | date: "%Y %b %d"}}
+                            &raquo;
+                        </div>
+
+                        <h2 class="post-title">
+                            <a href="{{ site.baseurl }}{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                        </h2>
+
+                        <div class="post-tags text-muted">
+                            {% for tag in post.tags %}
+                                <span class="post-tag label label-default">
+                                    #{{ tag }}
+                                </span>
+                            {% endfor %}
+                        </div>
+
+                    </div>
+
+                    <!-- <p>
+                        {{ post.summary }}
+                    </p> -->
+
+                </div>
+
+            </li>
+        {% endfor %}
+    </ul>
+
+</section>
