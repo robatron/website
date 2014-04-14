@@ -2,34 +2,31 @@
 layout:         blog
 name:           Blog
 ---
-{% if page.soft_published %}
-    <article class="blog-post container">
+{% comment %}
+    TODO: Display message if user reaches page in an un-soft-published state
+{% endcomment %}
+<article class="blog-post container {% unless page.soft_published %}soft-unpublished{% endunless %}">
 
-        <div class="post-header">
-            <h1 class="post-title">
-                <a href="{{ site.baseurl }}{{ page.url }}">
-                    {{ page.title }}
-                </a>
-            </h1>
+    <div class="post-header">
+        <h1 class="post-title">
+            <a href="{{ site.baseurl }}{{ page.url }}">
+                {{ page.title }}
+            </a>
+        </h1>
 
-            <div class="post-date">
-                {{ page.date | date: "%Y %B %d"}}
-            </div>
-
-            <p class="post-tags">
-                {% for tag in page.tags %}
-                    <span class="post-tag label label-default">#{{ tag }}</span>
-                {% endfor %}
-            </p>
+        <div class="post-date">
+            {{ page.date | date: "%Y %B %d"}}
         </div>
 
-        <div class="post-body">
-            {{ content }}
-        </div>
+        <p class="post-tags">
+            {% for tag in page.tags %}
+                <span class="post-tag label label-default">#{{ tag }}</span>
+            {% endfor %}
+        </p>
+    </div>
 
-    </article>
-{% else %}
-    <p class="container">
-        Page is not published.
-    </p>
-{% endif %}
+    <div class="post-body">
+        {{ content }}
+    </div>
+
+</article>

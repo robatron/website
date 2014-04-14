@@ -80,6 +80,20 @@
         <!-- JavaScript -->
         <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
         <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+        <script>
+            (function ( $ ) {
+
+                // Classname for soft-unpublished things
+                var SOFT_UNPUB_QUERY_PARAM  = 'preview';
+                var SOFT_UNPUB_CLASSNAME    = 'soft-unpublished';
+
+                // Show soft-unpublished things if the 'preview' query param is
+                // set
+                if ( location.search.indexOf( SOFT_UNPUB_QUERY_PARAM ) > -1 )
+                    $( '.' + SOFT_UNPUB_CLASSNAME )
+                        .removeClass( SOFT_UNPUB_CLASSNAME );
+            } )( jQuery );
+        </script>
     </body>
 
 </html>
