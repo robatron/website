@@ -2,6 +2,8 @@
 
 Personal website for Rob McGuire-Dale.
 
+https://robatron.github.io/website
+
 # Status
 
 Work in progress. Come back later.
